@@ -1,0 +1,132 @@
+@font-face {
+	font-family: 'Blender Pro'; 
+	src: local('Blender Pro'),
+		url(BlenderPro-Medium.ttf);
+}
+body{
+  font-family: 'Blender Pro';
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    text-decoration: none;
+    text-shadow: none;
+    background-color: rgb(216, 216, 216);
+}
+
+.mainPage{
+  background-color: rgb(37,108,99);
+  box-shadow: inset 0px 0px 8px 0px #000;
+    margin: 0;
+    padding: 0;
+    margin-top: -180px;
+    width: 100%;
+    padding-left: 205px;
+    color: rgb(255, 255, 255);
+    font-size: 50px;
+    position: fixed;
+    z-index:  100; /* МОЖНО КРУТИТЬ (ЕСЛИ УДАЛИТЬ), НО ПОЧЕМТО СЛЕТАЕТ ВЕРХНИЕ МЕНЮ */
+}
+    .menu {
+      z-index:  100;
+        margin-top: -111px;
+        /* box-shadow: 0 5px 10px rgb(123, 209, 220); */
+        position: fixed;
+        font-size: 25px;
+        width: 100%;
+        display: table;
+        margin-bottom: 15px;
+    }
+    .menu ul {
+        display: table-row;
+    }
+    .menu li {
+        display: table-cell;
+        background: rgb(18 63 74);
+    }
+    .menu ul li:hover, .menu a:hover {
+      box-shadow: inset 0px 0px 20px 8px rgb(123 209 220);
+    }
+    .menu li a {
+      text-transform: uppercase;
+      height: 40px;
+      transition: 0.5s;
+      display: flex;
+      padding: 2px 15px;
+      color: #fff;
+      text-align: center;
+      text-decoration: none;
+      justify-content: center;
+      align-items: stretch;
+      flex-direction: column;
+    }
+    .mainContacts{
+      color: #ffffff;
+      margin: 0;
+      box-shadow: inset 0px 0px 100px 0px #000;
+      background-color: rgb(37,108,99);
+      font-family: Blender Pro;
+      align-items: center;
+      justify-content: space-evenly;
+      margin-top: 180px;
+      display: flex;
+    }
+    .mapContacts{
+      width: 50%;
+    }
+    .futerDown{
+      position: absolute;
+      bottom: 0;
+      text-align: center;
+      display: flex;
+    font-family: Blender Pro;
+    color: #ffffff;
+    font-size: 150%;
+    margin-top: 100px;
+    width: 100%;
+    height: 100px;
+    /* box-shadow: inset 0px 0px 100px 0px #000; */
+    background-color: rgb(37,108,99);
+    justify-content: center;
+    align-items: center;
+    }
+    .futerDown a{
+      padding: 10px;
+    background: rgb(18 63 74);
+    border-radius: 10px;
+    margin-inline: 12px;
+    font-size: 100%;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    }
+    .futerDown a:hover{
+      text-shadow: none;
+      padding: 10px;
+      border-radius: 10px;
+      margin-inline:12px ;
+      font-size: 100%;
+      color: rgb(0, 0, 0);
+      background-color: rgb(123, 209, 220);
+    }
+    .futerDown .political{
+      text-shadow: none;
+        font-size: 65%;
+        text-decoration: underline;
+        background-color: rgb(37, 108, 99);
+    }
+    .futerDown .political:hover{
+      color: #fff;
+      box-shadow: none;
+      text-shadow: none;
+        font-size: 65%;
+        text-decoration: none;
+        background-color: rgb(37, 108, 99);
+    }
+    .workDays{
+      padding: 10px;
+      flex-direction: column;
+      background: rgb(18 63 74);
+      justify-content: center;
+      text-align: center;
+      display: flex;
+      border-radius: 10px;
+    }

@@ -1,0 +1,250 @@
+@font-face {
+	font-family: 'Blender Pro'; 
+	src: local('Blender Pro'),
+		url(BlenderPro-Medium.ttf);
+}
+body{
+  font-family: 'Blender Pro';
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    text-decoration: none;
+    text-shadow: none;
+    background-color: rgb(216, 216, 216);
+}
+
+.mainPage{
+  background-color: rgb(37,108,99);
+  box-shadow: inset 0px 0px 8px 0px #000;
+    margin: 0;
+    padding: 0;
+    margin-top: -170px;
+    width: 100%;
+    padding-left: 205px;
+    color: rgb(255, 255, 255);
+    font-size: 50px;
+    position: fixed;
+    z-index:  100; /* МОЖНО КРУТИТЬ (ЕСЛИ УДАЛИТЬ), НО ПОЧЕМТО СЛЕТАЕТ ВЕРХНИЕ МЕНЮ */
+}
+    .menu {
+      z-index:  100;
+        margin-top: -101px;
+        /* box-shadow: 0 5px 10px rgb(123, 209, 220); */
+        position: fixed;
+        font-size: 25px;
+        width: 100%;
+        display: table;
+        margin-bottom: 15px;
+    }
+    .menu ul {
+        display: table-row;
+    }
+    .menu li {
+        display: table-cell;
+        background: rgb(18 63 74);
+    }
+    .menu ul li:hover, .menu a:hover {
+      box-shadow: inset 0px 0px 20px 8px rgb(123 209 220);
+    }
+    .menu li a {
+      text-transform: uppercase;
+      height: 40px;
+      transition: 0.5s;
+      display: flex;
+      padding: 2px 15px;
+      color: #fff;
+      text-align: center;
+      text-decoration: none;
+      justify-content: center;
+      align-items: stretch;
+      flex-direction: column;
+    }
+    .futerDown{
+      text-align: center;
+      display: flex;
+    font-family: Blender Pro;
+    color: #ffffff;
+    font-size: 150%;
+    margin-top: 100px;
+    width: 100%;
+    height: 100px;
+    /* box-shadow: inset 0px 0px 100px 0px #000; */
+    background-color: rgb(37,108,99);
+    justify-content: center;
+    align-items: center;
+    }
+    .futerDown a{
+      padding: 10px;
+    background: rgb(18 63 74);
+    border-radius: 10px;
+    margin-inline: 12px;
+    font-size: 100%;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    }
+    .futerDown a:hover{
+      text-shadow: none;
+      padding: 10px;
+      border-radius: 10px;
+      margin-inline:12px ;
+      font-size: 100%;
+      color: rgb(0, 0, 0);
+      background-color: rgb(123, 209, 220);
+    }
+    .futerDown .political{
+      text-shadow: none;
+        font-size: 65%;
+        text-decoration: underline;
+        background-color: rgb(37, 108, 99);
+    }
+    .futerDown .political:hover{
+      color: #fff;
+      box-shadow: none;
+      text-shadow: none;
+        font-size: 65%;
+        text-decoration: none;
+        background-color: rgb(37, 108, 99);
+    }
+    .mainServise{
+      color: #ffffff;
+    margin: 0;
+    font-family: Blender Pro;
+    margin-top: 170px;
+    }
+
+    .BoxFlex{
+      font-family: Blender Pro;
+      width: 100%;
+      /* height: 100vh; */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+  }
+  .BoxFlex select, input{
+    outline: 0;
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+    font-family: Blender Pro;
+    border: none;
+    padding: 10px;
+    background-color: rgb(37, 108, 99);
+    text-align: center;
+    margin: 10px;
+    background: rgb(18 63 74);
+  }
+  .BoxFlex  input::placeholder{
+    color: white;
+  }
+  .BoxFlex select{
+    border: none;
+    background-color: rgb(37, 108, 99);
+    background: rgb(18 63 74);
+    color: white;
+    outline: none;
+  }
+  .submit{
+    border-radius: 10px;
+    transition: 0.5s;
+    background-color: rgb(37, 108, 99);
+    color: white;
+      cursor: pointer;
+      box-shadow: inset 0 0px 40px rgb(0, 0, 0);
+    border: 2px solid rgb(255, 255, 255);
+  }
+  .submit:hover{
+    box-shadow: inset 0 0px 40px rgb(123, 209, 220);
+  }
+  option:checked {
+    background-color: rgb(37, 108, 99);
+    color: white;
+    }
+    option{
+      cursor: pointer;
+      background: rgb(255, 255, 255);
+      color: rgb(0, 0, 0);
+    }
+    optgroup{
+      background: rgb(18 63 74);
+      color: rgb(255, 255, 255);
+    }
+    .BoxFlex form{
+      display: flex;
+    flex-direction: column;
+    }
+    .mainUslugiDiscription{
+      margin: 20px;
+    font-size: 25px;
+    width: 70%;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: inset 0px 0px 20px 0px #000;
+    background-color: rgb(37,108,99);
+    }
+    .mainUslugiDiscription h1{
+      text-align: center;
+    }
+    .mainUslugiDiscription p{
+      margin: 0;
+      line-height: 1;
+      margin-bottom: 15px;
+    }
+    .mainUslugiDiscription img{
+      float: left;
+      padding-right: 10px ;
+    }
+    .uslugi{
+      width: 73.5%;
+      margin-top: 30px;
+      display: flex;
+    }
+    .uslugi a{
+      box-shadow: inset 0px 0px 100px 0px #000;
+    transition: 0.5s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-inline: 1%;
+    background: rgb(18 63 74);
+    width: 300px;
+    height: 90px;
+    font-size: 25px;
+    color: #ffffff;
+    border-radius: 10px;
+    padding: 20px;
+    text-decoration: none;
+    }
+    .uslugi a:hover{
+      box-shadow: inset 0px 0px 100px 3px rgb(123, 209, 220);
+    }
+    .tablePrice {
+      text-align: center;
+      width: 100%;
+      font-size: 18px;
+      border: 1px 1px;
+      border-collapse: collapse;
+      margin-bottom: 10px;
+    }
+    .tableTdSecond {
+      background-color: rgb(18 63 74);
+  }
+  .tablePrice td {
+    /* box-shadow: inset 0px 0px 10px 0px black; */
+    line-height: 0.8;
+    width: 50%;
+    padding: 10px;
+    /* border: 1px solid; */
+}
+.formBox{
+  width: 1300px;
+    background: url(imgpreview.png);
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: inset 0px 0px 20px 0px #000;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-size: cover;
+}

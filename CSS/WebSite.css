@@ -1,0 +1,691 @@
+@font-face {
+	font-family: 'Blender Pro'; 
+	src: local('Blender Pro'),
+		url(BlenderPro-Medium.ttf);
+}
+body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    text-decoration: none;
+    text-shadow: none;
+}
+
+.mainPage{
+  background-color: rgb(37,108,99);
+  box-shadow: inset 0px 0px 8px 0px #000;
+    margin: 0;
+    padding: 0;
+    margin-top: -113px;
+    width: 100%;
+    padding-left: 205px;
+    color: rgb(255, 255, 255);
+    font-size: 50px;
+    position: fixed;
+    z-index:  100; /* МОЖНО КРУТИТЬ (ЕСЛИ УДАЛИТЬ), НО ПОЧЕМТО СЛЕТАЕТ ВЕРХНИЕ МЕНЮ */
+}
+    .menu {
+      z-index:  100;
+        margin-top: -44px;
+        /* box-shadow: 0 5px 10px rgb(123, 209, 220); */
+        position: fixed;
+        font-size: 25px;
+        width: 100%;
+        display: table;
+        margin-bottom: 15px;
+    }
+    .menu ul {
+        display: table-row;
+    }
+    .menu li {
+        display: table-cell;
+        background: rgb(18 63 74);
+    }
+    .menu ul li:hover, .menu a:hover {
+      box-shadow: inset 0px 0px 20px 8px rgb(123 209 220);
+    }
+    .menu li a {
+      text-transform: uppercase;
+      height: 40px;
+      transition: 0.5s;
+      display: flex;
+      padding: 2px 15px;
+      color: #fff;
+      text-align: center;
+      text-decoration: none;
+      justify-content: center;
+      align-items: stretch;
+      flex-direction: column;
+    }
+
+    .PajePrice li {
+      text-shadow: none;
+        margin-top: 120px;
+        padding: 20px;
+    }
+
+    .PajePrice {
+        margin-top: 10px;
+        text-align: center;
+    }
+
+  .PajePrice li{
+        display:inline-block;
+        text-align: center;
+        width: 25%; /* задаем размер пункта можно в пикселях*/
+    }
+
+    .PajePrice a {
+      box-shadow: inset 0px 0px 100px 0px #000;
+      text-shadow: none;
+      /* border: 3px solid rgb(255, 255, 255); */
+      transition: 0.5s;
+        display: block;
+        border-radius: 10px;
+        /* box-shadow: inset 0px 0px 0px 0px rgb(0 0 0); */
+        /* box-shadow: 0px 0px 20px 3px rgba(0, 0, 0, 0.446); */
+        padding: 40px 20px;
+        color: rgb(255, 255, 255);
+        font-size:170%;
+        text-decoration: none;
+        background: rgb(18 63 74);
+        margin-right: 30px; /* добавляем отступы между пунктами */
+    }
+
+    .PajePrice a:hover {
+      box-shadow: inset 0px 0px 100px 3px rgb(123, 209, 220);
+    }
+    .PajePrice2 li {
+        margin-top: 20px;
+        padding: 20px;
+    }
+
+    .PajePrice2 {
+        margin-top: 10px;
+        text-align: center;
+    }
+
+  .PajePrice2 li{
+        display:inline-block;
+        text-align: center;
+        width: 25%; /* задаем размер пункта можно в пикселях*/
+    }
+
+    .PajePrice2 a {
+      box-shadow: inset 0px 0px 100px 0px #000;
+      text-shadow: none;
+      /* border: 3px solid rgb(255, 255, 255); */
+      transition: 0.5s;
+        display: block;
+        border-radius: 10px;
+        /* box-shadow: inset 0px 0px 0px 0px rgb(0 0 0); */
+        /* box-shadow: 0px 0px 20px 3px rgba(0, 0, 0, 0.446); */
+        padding: 40px 20px;
+        color: rgb(255, 255, 255);
+        font-size:170%;
+        text-decoration: none;
+        background: rgb(18 63 74);
+        margin-right: 30px; /* добавляем отступы между пунктами */
+    }
+
+    .PajePrice2 a:hover {
+      box-shadow: inset 0px 0px 100px 3px rgb(123, 209, 220);
+    }
+    .Description{
+        text-align: center;
+        display: block;
+        text-shadow: none;
+        text-align: center;
+        text-decoration: none;
+    }
+    .Description li{
+      box-shadow: inset 0px 0px 100px 0px #000;
+        margin-top: 50px;
+        margin-bottom: 50px;
+        display: block;
+        transition: 0.5s;
+        margin-right: 25px;
+        color: white;
+        font-size: 150%;
+        padding: 40px 20px;
+        background: rgb(18 63 74);
+        /* border: 2px solid rgb(9, 18, 75); */
+        border-radius: 20px;
+        display:inline-block;
+        width: 80%;
+    }
+    /* .Description li:hover{
+        font-size: 151%;
+        box-shadow: 0 10px 40px rgb(54, 78, 184);
+        border: 6px solid rgb(9, 18, 75);
+    } */
+    .Description ul {
+      margin-top: 0;
+      box-shadow: inset 0px 0px 100px 0px #000;
+      margin-bottom: 0;
+      background-color: rgb(37,108,99);
+    }
+    .slider {
+      border-radius: 10px;
+      position: relative;
+      max-width: 980px;
+      box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.75);
+    }
+    
+    .slider input[name="switch"] {
+      display: none;
+    }
+    
+    .switch {
+      z-index:  0;
+      position: absolute;
+      left: 0;
+      bottom: -40px;
+      text-align: center;
+      width: 100%;
+    }
+    
+    .switch label{
+      transition: 0.5s;
+      display: inline-block;
+      width: 12px;
+      height: 12px;
+      cursor: pointer;
+      margin: 0 3px;
+      box-shadow: 0 0 2px 0 rgba(0, 0, 0, .8);
+      border-radius: 50%;
+      border: 5px solid rgb(0 218 255);
+      background-color: rgb(0, 0, 0);
+    }
+    
+    #btn1:checked~.switch label[for="btn1"] {
+      box-shadow: 0px 0px 10px 0px rgb(0 218 255), 0 0 20px 0 rgb(0 218 255);
+      background-color: rgb(0 218 255);
+    }
+    
+    #btn2:checked~.switch label[for="btn2"] {
+      box-shadow: 0px 0px 10px 0px rgb(0 218 255), 0 0 20px 0 rgb(0 218 255);
+      background-color: rgb(0 218 255);
+    }
+    
+    #btn3:checked~.switch label[for="btn3"] {
+      box-shadow: 0px 0px 10px 0px rgb(0 218 255), 0 0 20px 0 rgb(0 218 255);
+      background-color: rgb(0 218 255);
+    }
+
+    #btn4:checked~.switch label[for="btn4"] {
+      box-shadow: 0px 0px 10px 0px rgb(0 218 255), 0 0 20px 0 rgb(0 218 255);
+      background-color: rgb(0 218 255);
+    }
+    
+    .slider-inner {
+      overflow: hidden;
+      border-radius: 10px;
+    }
+    
+    .slides {
+      display: flex;
+      width: 100%;
+      transition: all 0.5s;
+    }
+    
+    .slides img {
+      width: 100%;
+      flex-shrink:0;
+    }
+    
+    #btn1:checked~slider-inner slides {
+      transform: translate(0);
+    }
+    
+    #btn2:checked~.slider-inner .slides {
+      transform: translateX(-100%);
+    }
+    
+    #btn3:checked~.slider-inner .slides {
+      transform: translateX(-200%);
+    }
+    #btn4:checked~.slider-inner .slides {
+      transform: translateX(-300%);
+    }
+
+    .slider2 {
+      position: relative;
+      max-width: 1150px;
+      margin: 50px auto;
+    }
+    
+    .slider2 input[name="switch2"] {
+      display: none;
+    }
+
+    .switch2 {
+      width: 100%;
+      z-index:  0;
+      position: absolute;
+      left: 0;
+      bottom: -40px;
+      text-align: center;
+      width: 100%;
+    }
+    
+    .switch2 label {
+      transition: 0.5s;
+      display: inline-block;
+      width: 12px;
+      height: 12px;
+      cursor: pointer;
+      margin: 0 3px;
+      box-shadow: 0 0 2px 0 rgba(0, 0, 0, .8);
+      border-radius: 50%;
+      border: 5px solid rgb(0 218 255);
+      background-color: rgb(0, 0, 0);
+    }
+    
+    #btn5:checked~.switch2 label[for="btn5"] {
+      box-shadow: 0px 0px 10px 0px rgb(0 218 255), 0 0 20px 0 rgb(0 218 255);
+      background-color: rgb(0 218 255);
+    }
+    
+    #btn6:checked~.switch2 label[for="btn6"] {
+      box-shadow: 0px 0px 10px 0px rgb(0 218 255), 0 0 20px 0 rgb(0 218 255);
+      background-color: rgb(0 218 255);
+    }
+    
+    #btn7:checked~.switch2 label[for="btn7"] {
+      box-shadow: 0px 0px 10px 0px rgb(0 218 255), 0 0 20px 0 rgb(0 218 255);
+      background-color: rgb(0 218 255);
+    }
+
+    #btn8:checked~.switch2 label[for="btn8"] {
+      box-shadow: 0px 0px 10px 0px rgb(0 218 255), 0 0 20px 0 rgb(0 218 255);
+      background-color: rgb(0 218 255);
+    }
+    
+    .slider-inner2 {
+      overflow: hidden;
+      
+    }
+    
+    .slides2 {
+      display: flex;
+      width: 100%;
+      transition: all 0.5s;
+    }
+    
+    .slides2 p {
+      margin: 0;
+      width: 100%;
+      flex-shrink:0;
+      /* background: rgb(9, 18, 75); */
+    }
+
+    #btn5:checked~slider-inner2 slides2 {
+      transform: translate(0);
+    }
+    #btn6:checked~.slider-inner2 .slides2 {
+      transform: translateX(-100%);
+    }
+    #btn7:checked~.slider-inner2 .slides2 {
+      transform: translateX(-200%);
+    }
+    #btn8:checked~.slider-inner2 .slides2 {
+      transform: translateX(-300%);
+    }
+    
+    .Reviews{
+      margin-inline: 90px;
+      /* text-align: start; */
+      /* background: rgb(138 138 138); */
+      border-radius: 20px;
+      border: 3px solid rgb(255 255 255);
+    }
+    .DescriptionFAQ{
+      margin-inline: 90px;
+      padding: 80px;
+      border: 3px solid rgb(255, 255, 255);
+      /* background: rgb(9, 18, 75); */
+      border-radius: 20px;
+    }
+
+    input[type=text] {
+      text-align: center;
+      font-family: 'Blender Pro';
+      outline: 0;
+      color: rgb(255, 255, 255);
+      font-size: 100%;
+      border: none;
+      padding: 10px;
+      background-color: rgb(37, 108, 99);
+    }
+
+    .textInputColor::placeholder {
+      color: rgb(255, 255, 255);
+    }
+
+    .textInputColor:focus::placeholder {
+      color: rgb(0, 225, 255);
+    }
+
+    .textInputColor:hover::placeholder {
+      color: rgb(0, 225, 255);
+    }
+
+    .DescriptionFAQRe{
+      text-align: start;
+    }
+
+    textarea[type=text]{
+      display:inline-block;
+      margin-top: 5px;
+      min-inline-size: 753px;
+      min-height: 300px;
+      max-height: 300px;
+      max-width: 753px;
+      outline: 0;
+      color: rgb(255, 255, 255);
+      font-size: 100%;
+      font-family: 'Blender Pro';
+      border: none;
+      padding: 10px;
+      background-color: rgb(37, 108, 99);
+    }
+    .DescriptionFAQ a{
+      box-shadow: inset 0 0px 40px rgb(0, 0, 0);
+      border: 3px solid rgb(255, 255, 255);
+      border-radius: 10px;
+        transition: 0.5s;
+        padding: 20px 308px;
+        color: rgb(255, 255, 255);
+        font-size:130%;
+        text-decoration: none;
+        background-color: rgb(37, 108, 99);
+    }
+    .DescriptionFAQ a:hover{
+      transition: 0.5s;
+      border-radius: 10px;
+      box-shadow: inset 0 0px 40px rgb(123, 209, 220);
+      font-size:130%;
+      text-decoration: none;
+  }
+  .Basement {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center; /* пункты и текст горизонтально по центру */
+    font-family:  1;
+    background-color: rgb(37,108,99);
+    color: white;
+  }
+  .Basement li{
+    display:inline-block;
+    text-align: center;
+  }
+  .Basement p{
+    display: block;
+    padding: 5px 15px;
+    color: #fff;
+    font-size:150%;
+    text-decoration: none;
+  }
+.Basement ul{
+  margin-bottom: 0px;
+  margin-top: 0px;
+}
+.Basement a{
+  padding: 10px;
+  background: rgb(18 63 74);
+  border-radius: 10px;
+  margin-inline:12px ;
+  font-size: 150%;
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+}
+.Basement a:hover{
+  text-shadow: none;
+  padding: 10px;
+  border-radius: 10px;
+  margin-inline:12px ;
+  font-size: 150%;
+  color: rgb(0, 0, 0);
+  background-color: rgb(123, 209, 220);
+}
+.Basement .political{
+  text-shadow: none;
+    font-size: 100%;
+    text-decoration: underline;
+    background-color: rgb(37, 108, 99);
+}
+.Basement .political:hover{
+  color: #fff;
+  box-shadow: none;
+  text-shadow: none;
+    font-size: 100%;
+    text-decoration: none;
+    background-color: rgb(37, 108, 99);
+}
+.borderPhoto{
+  margin-inline: 90px;
+  /* background: rgb(9, 18, 75); */
+  border-radius: 20px;
+  border: 3px solid rgb(255, 255, 255);
+}
+.buttonSevise{
+  width: 100%;
+  border: 3px solid rgb(123, 209, 220);
+      border-radius: 10px;
+        transition: 0.5s;
+        padding: 20px 308px;
+        color: rgb(54, 78, 184);
+        font-size:130%;
+        text-decoration: none;
+        background: rgb(9, 18, 75);
+}
+.tablePrice{
+  text-align: center;
+  width: 100%;
+  font-size: 18px;
+  border: 1px 1px;
+  border-collapse:collapse;
+  margin-bottom:10px ;
+}
+.tablePrice td{
+  /* box-shadow: inset 0px 0px 10px 0px black; */
+  line-height: 0.8;
+  width: 50%;
+  padding: 10px;
+  /* border: 1px solid; */
+}
+.tableTdSecond{
+  background-color: rgb(18 63 74);
+}
+.mainBoxButton{
+  height: 189px;
+  width: 100%;
+    background-color: rgb(253, 253, 253);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(216, 216, 216);
+}
+.mainBoxButton a{
+  box-shadow: inset 0px 0px 100px 0px #000;
+  transition: 0.5s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-inline: 1%;
+    background: rgb(18 63 74);
+    width: 29%;
+    height: 80%;
+    font-size: 29px;
+    color: #ffffff;
+    border-radius: 10px;
+    padding: 10px;
+    text-decoration: none;
+}
+.mainBoxButton a:hover{
+  box-shadow: none;
+  box-shadow: inset 0px 0px 100px 3px rgb(123, 209, 220);
+}
+.mainBoxText{
+  /* -webkit-text-stroke: 0.5px black; */
+  height: 678px;
+  display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+.mainBoxText h1{
+  margin: 0;
+  text-decoration: underline;
+  font-size: 80px;
+  color: rgb(37,108,99);
+}
+.mainBoxText p{
+  padding-inline:100px;
+  text-align: center;
+  font-size: 35px;
+  color: rgb(37,108,99);
+}
+.mainBoxText a{
+  box-shadow: inset 0px 0px 20px 0px #000;
+    transition: 0.5s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-inline: 1%;
+    background: rgb(18 63 74);
+    width: 29%;
+    font-size: 29px;
+    color: #ffffff;
+    border-radius: 10px;
+    padding: 10px;
+    text-decoration: none;
+}
+.mainBoxText a:hover{
+  box-shadow: inset 0px 0px 40px 3px rgb(123, 209, 220);
+}
+.mainBoxImg{
+  width: 100%;
+  box-shadow: inset 10000px 0 0px 0 rgb(0 0 0 / 14%);
+  display: flex;-webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+}
+.mainContainBoxes{
+  display: flex;
+    width: 100%;
+    text-align: center;
+    text-align: center;
+    text-decoration: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: inset 0px 0px 100px 0px #000;
+    background-color: rgb(37,108,99);
+}
+.mainContainBoxes h1{
+  width: 50%;
+  padding: 10px;
+  border: 2px solid;
+  border-top-left-radius:10px;
+  border-top-right-radius: 10px ;
+  box-shadow: inset 0 0 40px 0 rgb(0, 195, 255);
+  background: rgb(18, 63, 74);
+  border-bottom: 0;
+  margin: 0;
+  margin-top: 15px;
+  font-size: 60px;
+}
+.mainContainBoxes img{
+  width: 50%;
+}
+.mainContainBoxes p{
+  text-align: justify;
+  font-size: 25px;
+  line-height: 36px;
+}
+.containerBox{
+  margin-top: 100px;
+  flex-direction: column;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.divContentCentr{
+  border-top: 2px solid;
+  background: rgb(18, 63, 74);
+  margin-bottom: 150px;
+  display: flex;
+    padding-inline: 200px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    align-content: center;
+}
+.divContentCentrPeople p{
+  text-align: center;
+}
+.divContentCentrPeople{
+  border-top: 2px solid;
+  width: 100%;
+  height: 564.375px;
+  background: rgb(18, 63, 74);
+}
+.divContentCentrPhoto{
+  border-top: 2px solid;
+  width: 100%;
+  height: 800px;
+  background: rgb(18, 63, 74);
+}
+.divContentCentrPhoto img{
+  width: 100%;
+}
+.divContentCentrFAQ{
+  margin-bottom: 60px;
+  display: flex;
+  border-top: 2px solid;
+  width: 100%;
+  min-height: 564.375px;
+  background: rgb(18, 63, 74);
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+}
+.divContentCentrFAQ .inputs{
+  text-shadow: none;
+  font-size: 24px;
+  display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-between
+}
+textarea{
+  min-height: 900px;
+}
+.divContentCentrFAQ a{
+  margin-block:20px;
+  box-shadow: inset 0 0px 40px rgb(0, 0, 0);
+    border: 3px solid rgb(255, 255, 255);
+    border-radius: 10px;
+    transition: 0.5s;
+    padding: 20px 308px;
+    color: rgb(255, 255, 255);
+    font-size: 130%;
+    text-decoration: none;
+    background-color: rgb(37, 108, 99);
+}
+.divContentCentrFAQ a:hover{
+  transition: 0.5s;
+      border-radius: 10px;
+      box-shadow: inset 0 0px 40px rgb(123, 209, 220);
+      font-size:130%;
+      text-decoration: none;
+}
